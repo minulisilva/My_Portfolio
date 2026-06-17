@@ -2,16 +2,17 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Code2, Globe, X, Mail, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
+import { Send, Mail, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
+import { GitHubIcon, LinkedInIcon, TwitterXIcon } from "@/components/SocialIcons";
 import SectionWrapper, { SectionLabel, SectionTitle } from "@/components/SectionWrapper";
 import Button from "@/components/Button";
 
 /* ─── Social Links ─── */
 const SOCIAL_LINKS = [
-  { icon: Code2, label: "GitHub", href: "https://github.com/minulisilva", handle: "@minulisilva" },
-  { icon: Globe, label: "LinkedIn", href: "https://www.linkedin.com/in/minuli-de-silva", handle: "in/minuli-de-silva" },
-  { icon: X, label: "Twitter", href: "https://twitter.com/minulisilva", handle: "@minulisilva" },
-  { icon: Mail, label: "Email", href: "mailto:minulidesilva2003@gmail.com", handle: "minulidesilva2003@gmail.com" },
+  { renderIcon: (s: number) => <GitHubIcon size={s} className="text-accent" />, label: "GitHub", href: "https://github.com/minulisilva", handle: "@minulisilva" },
+  { renderIcon: (s: number) => <LinkedInIcon size={s} className="text-accent" />, label: "LinkedIn", href: "https://www.linkedin.com/in/minuli-de-silva", handle: "in/minuli-de-silva" },
+  { renderIcon: (s: number) => <TwitterXIcon size={s} className="text-accent" />, label: "Twitter", href: "https://twitter.com/minulisilva", handle: "@minulisilva" },
+  { renderIcon: (s: number) => <Mail size={s} className="text-accent" />, label: "Email", href: "mailto:minulidesilva2003@gmail.com", handle: "minulidesilva2003@gmail.com" },
 ];
 
 /* ─── Form State ─────────────────────────────────────────────────────────── */
@@ -342,7 +343,7 @@ export default function ContactSection() {
             <p className="text-xs font-mono text-ink/40 dark:text-paper/40 uppercase tracking-widest mb-6">
               Or reach out directly
             </p>
-            {SOCIAL_LINKS.map(({ icon: Icon, label, href, handle }, i) => (
+            {SOCIAL_LINKS.map(({ renderIcon, label, href, handle }, i) => (
               <motion.a
                 key={label}
                 href={href}
@@ -363,7 +364,7 @@ export default function ContactSection() {
                   transition={{ type: "spring", stiffness: 300 }}
                   className="relative z-10 w-10 h-10 rounded-xl bg-accent/10 flex items-center justify-center shrink-0 group-hover:bg-accent/20 transition-colors"
                 >
-                  <Icon size={18} className="text-accent" />
+                  {renderIcon(18)}
                 </motion.div>
                 <div className="relative z-10 flex-1">
                   <p className="text-xs font-mono text-ink/40 dark:text-paper/40 uppercase tracking-widest mb-0.5">

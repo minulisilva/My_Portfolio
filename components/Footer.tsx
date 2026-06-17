@@ -1,14 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code2, Globe, X, Mail, ArrowUpRight } from "lucide-react";
+import { Mail, ArrowUpRight } from "lucide-react";
+import { GitHubIcon, LinkedInIcon, TwitterXIcon } from "@/components/SocialIcons";
 
 /* ─── Social Links — TODO: replace hrefs with your profiles ────────────── */
 const SOCIAL_LINKS = [
-  { icon: Code2, label: "GitHub", href: "https://github.com/minulisilva" },
-  { icon: Globe, label: "LinkedIn", href: "https://www.linkedin.com/in/minuli-de-silva" },
-  { icon: X, label: "Twitter", href: "https://twitter.com/minulisilva" },
-  { icon: Mail, label: "Email", href: "mailto:minulidesilva2003@gmail.com" },
+  { renderIcon: (s: number) => <GitHubIcon size={s} />, label: "GitHub", href: "https://github.com/minulisilva" },
+  { renderIcon: (s: number) => <LinkedInIcon size={s} />, label: "LinkedIn", href: "https://www.linkedin.com/in/minuli-de-silva" },
+  { renderIcon: (s: number) => <TwitterXIcon size={s} />, label: "Twitter", href: "https://twitter.com/minulisilva" },
+  { renderIcon: (s: number) => <Mail size={s} />, label: "Email", href: "mailto:minulidesilva2003@gmail.com" },
 ];
 
 const NAV_LINKS = [
@@ -54,7 +55,7 @@ export default function Footer() {
 
           {/* ── Social ── */}
           <div className="flex items-center gap-3">
-            {SOCIAL_LINKS.map(({ icon: Icon, label, href }) => (
+            {SOCIAL_LINKS.map(({ renderIcon, label, href }) => (
               <motion.a
                 key={label}
                 href={href}
@@ -65,7 +66,7 @@ export default function Footer() {
                 whileTap={{ scale: 0.9 }}
                 className="w-9 h-9 rounded-lg flex items-center justify-center bg-paper dark:bg-ink border border-paper-muted dark:border-ink-muted text-ink/60 dark:text-paper/60 hover:text-accent hover:border-accent/40 transition-colors"
               >
-                <Icon size={16} />
+                {renderIcon(16)}
               </motion.a>
             ))}
           </div>

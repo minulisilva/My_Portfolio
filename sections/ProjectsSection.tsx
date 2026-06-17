@@ -3,6 +3,7 @@
 import { useRef, useState } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import { Code2, ExternalLink, FolderOpen, ChevronDown, ChevronUp, Sparkles } from "lucide-react";
+import { GitHubIcon } from "@/components/SocialIcons";
 import SectionWrapper, { SectionLabel, SectionTitle } from "@/components/SectionWrapper";
 
 /* ─── Types ──────────────────────────────────────────────────────────────── */
@@ -25,7 +26,7 @@ const PROJECTS: Project[] = [
     image: "project1.jpg",
     tech: ["Next.js", "TypeScript", "PostgreSQL", "TailwindCSS"],
     github: "https://github.com/minulisilva/Personal-Portfolio",
-    demo: "https://saas-demo.alexrivera.dev",
+    demo: "https://minuli-de-silva.vercel.app/",
     category: "Web App",
     featured: true,
   },
@@ -257,7 +258,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               whileHover={{ x: 2 }}
               className="flex items-center gap-1.5 text-xs font-mono text-ink/60 dark:text-paper/60 hover:text-ink dark:hover:text-paper transition-colors"
             >
-              <Code2 size={14} />
+              <GitHubIcon size={14} />
               Code
             </motion.a>
           )}
@@ -468,7 +469,7 @@ export default function ProjectsSection() {
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-ink/15 dark:border-paper/15 text-sm font-display font-medium text-ink/70 dark:text-paper/70 hover:border-accent/50 hover:text-accent transition-all"
           >
-            <Code2 size={16} />
+            <GitHubIcon size={20} />
             View GitHub Profile
           </motion.a>
         </motion.div>

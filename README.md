@@ -8,7 +8,7 @@ Designed to showcase skills, projects, experience, and contact information with 
 
 ## 🌟 Live Demo
 
-🔗 https://your-portfolio.com
+🔗 https://minuli-de-silva.vercel.app/
 
 ---
 

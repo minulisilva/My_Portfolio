@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowDown, Code2, Globe } from "lucide-react";
+import { ArrowDown } from "lucide-react";
+import { GitHubIcon, LinkedInIcon } from "@/components/SocialIcons";
 import Button from "@/components/Button";
 import Image from "next/image";
 
@@ -180,11 +181,11 @@ export default function HeroSection() {
               <div className="flex gap-3">
                 <a href="https://github.com/minulisilva" target="_blank" rel="noopener noreferrer"
                   className="text-ink/50 dark:text-paper/50 hover:text-ink dark:hover:text-paper transition-colors">
-                  <Code2 size={20} />
+                  <GitHubIcon size={20} />
                 </a>
                 <a href="https://www.linkedin.com/in/minuli-de-silva" target="_blank" rel="noopener noreferrer"
                   className="text-ink/50 dark:text-paper/50 hover:text-ink dark:hover:text-paper transition-colors">
-                  <Globe size={20} />
+                  <LinkedInIcon size={20} />
                 </a>
               </div>
             </motion.div>
