@@ -4,13 +4,13 @@ import { useRef, useState } from "react";
 import { motion, useMotionValue, useSpring, useTransform, AnimatePresence } from "framer-motion";
 import {
   Code2, Smartphone, Server, Paintbrush, ShoppingCart,
-  Shield, ArrowUpRight, Sparkles, Check,
+  Shield, ArrowUpRight, Sparkles, Check, type LucideProps,
 } from "lucide-react";
 import SectionWrapper, { SectionLabel, SectionTitle } from "@/components/SectionWrapper";
 
 /* ─── Types ─────────── */
 interface Service {
-  icon: React.ElementType;
+  icon: React.FC<LucideProps>;
   title: string;
   tagline: string;
   description: string;
