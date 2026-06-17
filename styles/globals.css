@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=JetBrains+Mono:wght@400;500&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  @apply font-body antialiased;
+  @apply bg-paper text-ink dark:bg-ink dark:text-paper;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+::selection {
+  @apply bg-rose-200 text-rose-900;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { @apply bg-paper dark:bg-ink; }
+::-webkit-scrollbar-thumb { @apply bg-accent rounded-full; }
+
+@layer utilities {
+  .section-padding {
+    @apply py-20 md:py-28 px-6 md:px-12 lg:px-24;
+  }
+
+  /* cyan gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-accent to-sky-300 bg-clip-text text-transparent;
+  }
+
+  .card-base {
+    @apply bg-paper-soft/70 dark:bg-ink-soft/60 backdrop-blur-xl border border-paper-muted/50 dark:border-ink-muted/50 rounded-2xl;
+  }
+}
