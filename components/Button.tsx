@@ -62,7 +62,7 @@ export default function Button({
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}
         className={classes}
-        {...(props as AnchorHTMLAttributes<HTMLAnchorElement>)}
+        {...(props as any)}
       >
         {inner}
       </motion.a>
