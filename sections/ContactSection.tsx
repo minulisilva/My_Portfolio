@@ -2,15 +2,15 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Github, Linkedin, Twitter, Mail, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
+import { Send, Code2, Globe, X, Mail, CheckCircle, AlertCircle, ArrowRight } from "lucide-react";
 import SectionWrapper, { SectionLabel, SectionTitle } from "@/components/SectionWrapper";
 import Button from "@/components/Button";
 
 /* ─── Social Links ─── */
 const SOCIAL_LINKS = [
-  { icon: Github, label: "GitHub", href: "https://github.com/minulisilva", handle: "@minulisilva" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/minuli-de-silva", handle: "in/minuli-de-silva" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com/minulisilva", handle: "@minulisilva" },
+  { icon: Code2, label: "GitHub", href: "https://github.com/minulisilva", handle: "@minulisilva" },
+  { icon: Globe, label: "LinkedIn", href: "https://www.linkedin.com/in/minuli-de-silva", handle: "in/minuli-de-silva" },
+  { icon: X, label: "Twitter", href: "https://twitter.com/minulisilva", handle: "@minulisilva" },
   { icon: Mail, label: "Email", href: "mailto:minulidesilva2003@gmail.com", handle: "minulidesilva2003@gmail.com" },
 ];
 

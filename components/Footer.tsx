@@ -1,13 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Twitter, Mail, ArrowUpRight } from "lucide-react";
+import { Code2, Globe, X, Mail, ArrowUpRight } from "lucide-react";
 
 /* ─── Social Links — TODO: replace hrefs with your profiles ────────────── */
 const SOCIAL_LINKS = [
-  { icon: Github, label: "GitHub", href: "https://github.com/minulisilva" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/minuli-de-silva" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com/minulisilva" },
+  { icon: Code2, label: "GitHub", href: "https://github.com/minulisilva" },
+  { icon: Globe, label: "LinkedIn", href: "https://www.linkedin.com/in/minuli-de-silva" },
+  { icon: X, label: "Twitter", href: "https://twitter.com/minulisilva" },
   { icon: Mail, label: "Email", href: "mailto:minulidesilva2003@gmail.com" },
 ];
 
