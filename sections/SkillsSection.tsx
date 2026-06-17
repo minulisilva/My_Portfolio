@@ -200,11 +200,7 @@ export default function SkillsSection() {
   return (
     <SectionWrapper id="skills">
 
-      {/* devicons via CDN */}
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-      />
+      {/* devicons moved to layout.tsx */}
 
       <div className="max-w-7xl mx-auto overflow-hidden">
 

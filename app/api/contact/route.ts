@@ -75,7 +75,8 @@ export async function POST(request: NextRequest) {
     });
 
     if (error) {
-      console.error("Resend error:", error);
+      const safeError = String(error).replace(/[\r\n]/g, " ");
+      console.error("Resend error:", safeError);
       return NextResponse.json(
         { error: "Failed to send message. Please try again." },
         { status: 500 }

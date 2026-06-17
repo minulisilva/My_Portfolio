@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import Background3D from "@/components/Background3D";
+import Background3DWrapper from "@/components/Background3DWrapper";
 
 /* ─── Metadata ── */
 export const metadata: Metadata = {
@@ -50,10 +50,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Favicon fallback for all browsers */}
         <link rel="icon" href="/favicon.png" type="image/png" />
         <link rel="apple-touch-icon" href="/favicon.png" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
       <body>
         <ThemeProvider>
-          <Background3D />
+          <Background3DWrapper />
           {children}
         </ThemeProvider>
       </body>
