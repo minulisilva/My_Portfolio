@@ -168,9 +168,9 @@ This project is licensed under the MIT License.
 
 **Minuli De Silva**
 
-- Portfolio: [https://your-portfolio.com](https://minuli-de-silva.vercel.app/)
-- LinkedIn: https://linkedin.com/in/your-profile
-- GitHub: https://github.com/yourusername
+- Portfolio: [https://minuli-de-silva.vercel.app/](https://minuli-de-silva.vercel.app/)
+- LinkedIn: [[http://www.linkedin.com/in/minuli-de-silva](http://www.linkedin.com/in/minuli-de-silva)
+- GitHub: https://github.com/minulisilva
 
 ---
 
