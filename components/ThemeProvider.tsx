@@ -21,8 +21,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     // Check localStorage first, then system preference
     const stored = localStorage.getItem("theme") as Theme | null;
-    const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initial: Theme = stored ?? (systemPrefersDark ? "dark" : "light");
+    const initial: Theme = stored ?? "dark";
     setTheme(initial);
     setMounted(true);
   }, []);
