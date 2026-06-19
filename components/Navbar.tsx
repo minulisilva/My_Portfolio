@@ -205,7 +205,7 @@ export default function Navbar() {
                 damping: 30,
               }}
               className="lg:hidden fixed top-[64px] sm:top-[72px] left-0 right-0 z-[50]
-                h-[50vh]
+                h-[80vh]
                 bg-paper/95 dark:bg-ink/95
                 backdrop-blur-2xl
                 border-b border-paper-muted/50 dark:border-ink-muted/50
@@ -266,7 +266,7 @@ export default function Navbar() {
                 className="relative z-10 px-4 pb-8 pt-4 border-t border-paper-muted/30 dark:border-ink-muted/30 space-y-3"
               >
                 {/* theme toggle row */}
-                <button
+                {/*<button
                   onClick={toggleTheme}
                   className="w-full flex items-center gap-3 px-4 py-3 rounded-2xl
                     bg-paper-soft dark:bg-ink-soft
@@ -281,7 +281,7 @@ export default function Navbar() {
                     }
                   </span>
                   {theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
-                </button>
+                </button>*/}
 
                 {/* Download CV */}
                 <a
