@@ -174,7 +174,7 @@ export default function AboutSection() {
               transition={{ delay: 0.55, duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
               className="mt-8"
             >
-              <Button as="a" href="/cv/my-cv.pdf" download="Minuli_De_Silva.pdf" variant="primary" size="lg">
+              <Button as="a" href="/cv/Minuli_De_Silva.pdf" download="Minuli_De_Silva.pdf" variant="primary" size="lg">
                 Download CV
               </Button>
             </motion.div>

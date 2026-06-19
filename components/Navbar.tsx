@@ -141,7 +141,7 @@ export default function Navbar() {
 
             {/* CV button */}
             <motion.a
-              href="/cv/my-cv.pdf"
+              href="/cv/Minuli_De_Silva.pdf"
               download="Minuli_De_Silva.pdf"
               whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
               className="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-lg bg-accent text-white text-xs font-display font-semibold transition-all hover:bg-accent-dark"
@@ -285,7 +285,7 @@ export default function Navbar() {
 
                 {/* Download CV */}
                 <a
-                  href="/cv/my-cv.pdf"
+                  href="/cv/Minuli_De_Silva.pdf"
                   download="Minuli_De_Silva.pdf"
                   className="w-full flex items-center justify-center gap-2 px-4 py-3.5 rounded-2xl
                     bg-accent text-white font-display font-semibold text-sm
