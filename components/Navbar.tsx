@@ -205,7 +205,7 @@ export default function Navbar() {
                 damping: 30,
               }}
               className="lg:hidden fixed top-[64px] sm:top-[72px] left-0 right-0 z-[50]
-                h-[80vh]
+                h-[70vh]
                 bg-paper/95 dark:bg-ink/95
                 backdrop-blur-2xl
                 border-b border-paper-muted/50 dark:border-ink-muted/50
